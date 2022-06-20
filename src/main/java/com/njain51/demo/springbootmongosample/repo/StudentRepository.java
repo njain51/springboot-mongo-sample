@@ -1,10 +1,10 @@
-package repo;/**
+package com.njain51.demo.springbootmongosample.repo;/**
  * @author : Nitin Jain
  * @mailto : official.nitinjain@gmail.com
  * @created : 6/18/2022, Saturday
  **/
 
-import model.Student;
+import com.njain51.demo.springbootmongosample.model.Student;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
 /**

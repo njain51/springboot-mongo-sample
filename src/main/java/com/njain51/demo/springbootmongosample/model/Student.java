@@ -1,4 +1,4 @@
-package model;/**
+package com.njain51.demo.springbootmongosample.model;/**
  * @author : Nitin Jain
  * @mailto : official.nitinjain@gmail.com
  * @created : 6/18/2022, Saturday
@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 /**
  What this program snippet doing?
  **/
-@Document(collation = "students")
+@Document(collection = "students")
 public class Student {
 
     private int id;

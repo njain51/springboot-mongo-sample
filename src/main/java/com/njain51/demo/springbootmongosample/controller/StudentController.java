@@ -1,14 +1,11 @@
-package controller;/**
- * @author : Nitin Jain
- * @mailto : official.nitinjain@gmail.com
- * @created : 6/18/2022, Saturday
- **/
+package com.njain51.demo.springbootmongosample.controller;
 
-import model.Student;
+
+import com.njain51.demo.springbootmongosample.model.Student;
+import com.njain51.demo.springbootmongosample.repo.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import repo.StudentRepository;
 
 /**
  What this program snippet doing?
@@ -33,7 +30,7 @@ public class StudentController {
     }
 
 
-    @GetMapping("/getstudent")
+    @GetMapping("/student")
     public ResponseEntity<?> getStudent(){
 
         return ResponseEntity.ok(this.studentRepository.findAll());
